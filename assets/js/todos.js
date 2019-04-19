@@ -1,5 +1,5 @@
 //Check off specific todos by clicking
-$("li").click(function(){
+$("ul").on("click", "li", function(){
     $(this).toggleClass("completed");
 }); 
 
@@ -7,7 +7,7 @@ $("li").click(function(){
 //"event.stopPropagation()"Prevents the event from bubbling up the DOM tree,
 // preventing any parent handlers from being notified of 
 //the event.
-$("span").click(function(event){
+$("ul").on("click", "span", function(event){
     $(this).parent().fadeOut(500, function(){
         $(this).remove();
     });
@@ -21,6 +21,6 @@ $("input[type='text']").keypress(function(event){
         //clear the input field
         $(this).val("");
         //create a new li and add it to ul
-        $("ul").append("<li>" + todoText + "</li>");
+        $("ul").append("<li><span>X </span>" + todoText + "</li>");
     }
 });
