@@ -16,10 +16,6 @@ font-size: 24px;
 font-weight: normal;
 }
 
-.fa-pencil-alt {
-    float: right;
-}
-
 ul {
     list-style: none;
     margin: 0;
@@ -70,14 +66,18 @@ li:nth-child(2n){
     background: #f7f7f7;
 }
 
-#container {
-    width: 360px;
-    margin: 100px auto;
-    background: #f7f7f7;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+.fa-pencil-alt {
+    float: right;
 }
 
 .completed {
     color: gray;
     text-decoration: line-through;
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
