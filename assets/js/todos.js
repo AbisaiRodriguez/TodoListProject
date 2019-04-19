@@ -25,6 +25,8 @@ $("input[type='text']").keypress(function(event){
     }
 });
 
+
 $(".fa-pencil-alt").click(function(){
+    //toggle in-out the input 
     $("input[type='text']").fadeToggle();
 });
